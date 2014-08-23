@@ -22,8 +22,7 @@ DS.Store.reopen({
     var modelType = store.modelFor(modelName);
 
     if (this.usingFixtureAdapter()) {
-      if (options.setAssociations)
-        this.setAssociationsForFixtureAdapter(modelType, modelName, fixture);
+        //this.setAssociationsForFixtureAdapter(modelType, modelName, fixture);
       return FactoryGuy.pushFixture(modelType, fixture);
     } else {
       var store = this;
